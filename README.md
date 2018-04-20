@@ -364,4 +364,4 @@
 
 # Example
 
-	[example.c](./example.c)
+[example.c](example.c)
