@@ -71,5 +71,8 @@ int main(int argc, char *argv)
 		printf("[Get] key: %s, value: %d\n", test_key[i], v);
 	}
 
+	printf("Destroy\n");
+	hashmap_destroy(STR, map);
+
 	return 0;
 }
