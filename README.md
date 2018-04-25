@@ -238,7 +238,7 @@
 	Macro of function `name##_hashmap_destroy`
 
 ```
-	int hashmap_destroy(name, phashmap);
+	int hashmap_destroy(name, map);
 ```
 
 ---
@@ -246,7 +246,7 @@
 	Macro of function `name##_hashmap_set_hash_func`
 
 ```
-	int hashmap_set_hash_func(name, hashmap, hash_func);
+	int hashmap_set_hash_func(name, map, hash_func);
 ```
 
 ---
@@ -254,7 +254,7 @@
 	Macro of function `name##_hashmap_set_compare_func`
 
 ```
-	int hashmap_set_compare_func(name, hashmap, compare_func);
+	int hashmap_set_compare_func(name, map, compare_func);
 ```
 
 ---
@@ -262,7 +262,7 @@
 	Macro of function `name##_hashmap_set_key_funcs`
 
 ```
-	int hashmap_set_key_funcs(name, hashmap, key_alloc_func, key_free_func);
+	int hashmap_set_key_funcs(name, map, key_alloc_func, key_free_func);
 ```
 
 ---
@@ -270,7 +270,7 @@
 	Macro of function `name##_hashmap_has_key`
 
 ```
-	int hashmap_has_key(name, hashmap, key);
+	int hashmap_has_key(name, map, key);
 ```
 
 ---
@@ -278,7 +278,7 @@
 	Macro of function `name##_hashmap_get`
 
 ```
-	int hashmap_get(name, hashmap, key, pvalue);
+	int hashmap_get(name, map, key, pvalue);
 ```
 
 ---
@@ -286,7 +286,7 @@
 	Macro of function `name##_hashmap_put`
 
 ```
-	int hashmap_put(name, hashmap, key, value);
+	int hashmap_put(name, map, key, value);
 ```
 
 ---
@@ -294,7 +294,7 @@
 	Macro of function `name##_hashmap_remove`
 
 ```
-	int hashmap_remove(name, hashmap, key);
+	int hashmap_remove(name, map, key);
 ```
 
 ---
@@ -303,7 +303,7 @@
 
 ```
 
-	int hashmap_size(name, hashmap);
+	int hashmap_size(name, map);
 ```
 
 ---
@@ -311,7 +311,7 @@
 	Macro of function `name##_hashmap_collision_mean`
 
 ```	
-	double hashmap_collision_mean(name, hashmap);
+	double hashmap_collision_mean(name, map);
 ```
 
 ---
@@ -319,7 +319,7 @@
 	Macro of function `name##_hashmap_collision_variance`
 
 ```	
-	double hashmap_collision_variance(name, hashmap);
+	double hashmap_collision_variance(name, map);
 ```
 
 ---
@@ -327,7 +327,7 @@
 	Macro of function `name##_hashmap_iter`
 
 ```
-	iter(name) hashmap_iter(name, hashmap);
+	iter(name) hashmap_iter(name, map);
 ```
 
 ---
@@ -335,7 +335,7 @@
 	Macro of function `name##_hashmap_next`
 
 ```	
-	iter(name) hashmap_next(name, hashmap, iter);
+	iter(name) hashmap_next(name, map, it);
 ```
 
 ---
@@ -343,7 +343,7 @@
 	Macro of function `name##_hashmap_iter_get`
 
 ```
-	int hashmap_iter_get(name, iter, pkey, pvalue);
+	int hashmap_iter_get(name, it, pkey, pvalue);
 ```
 
 ---
@@ -351,7 +351,7 @@
 	Macro of function `name##_hashmap_iter_put`
 
 ```
-	int hashmap_iter_put(name, iter, value);
+	int hashmap_iter_put(name, it, value);
 ```
 
 ---
@@ -359,7 +359,7 @@
 	Macro of function `name##_hashmap_foreach`
 
 ```
-	int hashmap_foreach(name, hashmap, func, args);
+	int hashmap_foreach(name, map, func, args);
 ```
 
 # Example
