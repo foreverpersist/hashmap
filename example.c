@@ -9,7 +9,7 @@ int print_str_iter(const char * key, int value, void *args)
 
 HASHMAP_DEFINE(STR, const char *, int)
 
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int status;
 	const char *k;
