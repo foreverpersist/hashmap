@@ -558,6 +558,8 @@
 			hashmap_error("Error [%2d]: Invalid hash map\n", ERR_USER) \
 			return ERR_USER; \
 		} \
+		if (!map->item_size) \
+			return 0.0; \
 		size_t i; \
 		long total = 0; \
 		for (i = 0; i < map->capacity; i++) \
@@ -577,6 +579,8 @@
 			hashmap_error("Error [%2d]: Invalid hash map\n", ERR_USER) \
 			return ERR_USER; \
 		} \
+		if (!map->item_size) \
+			return 0.0; \
 		double mean = name##_hashmap_collision_mean(map); \
 		size_t i; \
 		double diff; \
